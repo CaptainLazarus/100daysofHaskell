@@ -1,0 +1,22 @@
+-- module Main where
+
+-- import Lib
+
+-- yieldPath xs a = [y | (x,y) <- xs, x == a]
+
+-- # Problem 4
+hasPath :: [(Int,Int)] -> Int -> Int -> Bool
+-- hasPath [] _ _ = False
+-- hasPath [(a,b)] _ _ = True
+-- hasPath xs a b = elem (a,b) xs || hasPath xs y b
+--     where y | [] = -1
+--             | [x] = x
+--             | otherwise = ...
+
+-- hasPath [] x y = x == y
+-- hasPath xs x y
+--     | x == y = True
+--     | otherwise = let xs1 = [(n,m) | (n,m) <- xs, n/=x] in or [hasPath xs1 m y | (n,m) <- xs , n == x]
+
+-- main :: IO ()
+-- main = someFunc

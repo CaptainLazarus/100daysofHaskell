@@ -1,0 +1,24 @@
+-- module Day12 where
+
+-- import Lib ()
+
+-- -- fact :: Integer -> Integer
+-- fact 0 = 1
+-- fact n = n * fact(n-1)
+
+-- -- fact1 :: Integer -> Integer
+-- fact1 n = if n <= 1 then 1 else n*fact1(n-1)
+
+-- -- Function defined using guards. Works like a switch statement. Otherwise always evaluates to true.
+-- fact2 :: Integer -> Integer
+-- fact2 n | n<=1 = 1
+--         | otherwise = n*fact2(n-1)
+
+-- greatest a b = if a>b then a else b
+-- greatest3 a b c = greatest (greatest a b) (greatest b c)
+
+-- isZero 0 = False
+-- isZero _ = True
+
+-- main :: IO ()
+-- main = print (greatest3 10 14 9)

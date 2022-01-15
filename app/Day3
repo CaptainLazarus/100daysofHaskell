@@ -1,0 +1,18 @@
+-- {-# OPTIONS_GHC -Wno-incomplete-patterns #-}
+-- module Main where
+
+-- import Lib
+-- -- import Data.List
+
+-- produceList n m | m<n = []
+--                 | m == n = [m]
+--                 | m > n = n : produceList (n+1) m
+
+-- sum1 [] = 0
+-- sum1 (x:xs) = x + sum xs
+
+-- -- sum2 xs = foldr (*) 1 xs
+
+-- main :: IO ()
+-- -- main = print (head (produceList 1 10) , tail (produceList 1 10) , length (produceList 1 10) , init (produceList 1 10) , null (produceList 1 0))
+-- main = print(sum1 (produceList 1 20))
